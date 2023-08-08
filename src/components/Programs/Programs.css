@@ -48,3 +48,7 @@
 .join-now > img {
   width: 1rem;
 }
+.category:hover {
+  background: var(--planCard);
+  cursor: pointer;
+}
