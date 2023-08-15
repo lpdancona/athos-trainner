@@ -1,6 +1,7 @@
 {
   "name": "fitclub",
   "version": "0.1.0",
+  "homepage": "https://coachcthos.vercel.app/",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
