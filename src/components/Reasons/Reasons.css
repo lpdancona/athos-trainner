@@ -84,4 +84,8 @@
     width: 7rem;
     height: 6rem;
   }
+  .details-r > div {
+    font-size: small;
+    text-transform: none;
+  }
 }

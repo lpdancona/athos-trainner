@@ -6,11 +6,12 @@ import hero_image_back from "../../assets/hero_image_back.png";
 import Heart from "../../assets/heart.png";
 import Calories from "../../assets/calories.png";
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 export const Hero = () => {
   const transition = { type: "spring", duration: 3 };
   const mobile = window.innerWidth <= 768 ? true : false;
   return (
-    <div className="hero">
+    <div className="hero" id="hero">
       <div className="blur hero-blur"></div>
       <div className="left-h">
         <Header />
@@ -53,8 +54,13 @@ export const Hero = () => {
         </div>
         {/* hero buttons */}
         <div className="hero-buttons">
-          <button className="btn">Get Started</button>
-          <button className="btn">Learn More</button>
+          <button className="btn">
+            {" "}
+            <Link to="join-us" span={true} smooth={true}>
+              Get Started
+            </Link>
+          </button>
+          {/* <button className="btn">Learn More</button> */}
         </div>
       </div>
       <div className="right-h">

@@ -22,6 +22,9 @@ export default function Join() {
         }
       );
   };
+  const joinus = function () {
+    alert("The form has been Submitted.");
+  };
   return (
     <div className="Join" id="join-us">
       <div className="left-j">
@@ -37,8 +40,27 @@ export default function Join() {
       </div>
       <div className="right-j">
         <form ref={form} className="email-container" onSubmit={sendEmail}>
+          <input type="text" name="user_name" placeholder="Your Name" />
           <input type="email" name="user_email" placeholder="Your Email" />
-          <button className="btn btn-j">Join Now</button>
+          <input type="number" name="user_age" placeholder="How old are you?" />
+          <input
+            type="text"
+            name="user_conditions"
+            placeholder="Any Medical Conditions?"
+          />
+          <input
+            type="text"
+            name="user_online"
+            placeholder="Online or in-person?"
+          />
+          <input
+            type="email"
+            name="user_email"
+            placeholder="What's your fitness goal?"
+          />
+          <button className="btn btn-j" onClick={joinus}>
+            Join Now
+          </button>
         </form>
       </div>
     </div>

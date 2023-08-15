@@ -10,7 +10,9 @@ export default function Footer() {
       <div className="footer">
         <div className="social-links">
           {/* <img src={Github} alt="" /> */}
-          <img src={Instagram} alt="" />
+          <a href="https://www.instagram.com/athosrleao/">
+            <img src={Instagram} alt="" />
+          </a>
         </div>
         <div className="logo-f">
           <img src={Logo} alt="" />

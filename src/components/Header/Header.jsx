@@ -26,10 +26,48 @@ export default function Header() {
         </div>
       ) : (
         <ul className="header-menu">
-          <li onClick={() => setMenuOpened(false)}>Home</li>
-          <li onClick={() => setMenuOpened(false)}>Programs</li>
-          <li onClick={() => setMenuOpened(false)}>Why me</li>
-          <li onClick={() => setMenuOpened(false)}>Testimonials</li>
+          <li>
+            <Link
+              onClick={() => setMenuOpened(false)}
+              to="hero"
+              span={true}
+              smooth={true}
+            >
+              Home
+            </Link>
+          </li>
+          <li>
+            {" "}
+            <Link
+              onClick={() => setMenuOpened(false)}
+              to="programs"
+              span={true}
+              smooth={true}
+            >
+              Programs
+            </Link>
+          </li>
+          <li>
+            {" "}
+            <Link
+              onClick={() => setMenuOpened(false)}
+              to="reasons"
+              span={true}
+              smooth={true}
+            >
+              Why Me
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={() => setMenuOpened(false)}
+              to="Testimonials"
+              span={true}
+              smooth={true}
+            >
+              Testimonials
+            </Link>
+          </li>
         </ul>
       )}
     </div>

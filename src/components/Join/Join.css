@@ -28,15 +28,19 @@
 }
 .email-container {
   display: flex;
-  gap: 3rem;
+  gap: 2rem;
   background-color: gray;
   padding: 1rem 2rem;
+  flex-direction: column;
+  width: 100%;
+  align-self: center;
 }
 .email-container > input {
   background-color: transparent;
   border: none;
   outline: none;
   color: var(--lightgray);
+  align-self: center;
 }
 ::placeholder {
   color: var(--lightgray);
@@ -56,5 +60,33 @@
   }
   .right-j {
     padding: 2rem;
+  }
+  .email-container > input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--lightgray);
+  }
+  .right-j {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+}
+@media screen and (min-width: 768px) {
+  .right-j {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 50%;
+  }
+  .email-container > input {
+    background-color: transparent;
+    border: outset;
+    outline: none;
+    color: var(--lightgray);
+    align-self: center;
+    width: 100%;
+    font-size: large;
   }
 }

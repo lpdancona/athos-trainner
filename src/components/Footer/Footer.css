@@ -16,9 +16,9 @@
   display: flex;
   gap: 4rem;
 }
-.social-links > img {
-  width: 4rem;
-  height: 4rem;
+.social-links > a > img {
+  width: 2rem;
+  height: 2rem;
   cursor: pointer;
 }
 .logo-f > img {
